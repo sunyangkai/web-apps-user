@@ -62,6 +62,7 @@ module.exports = {
         base: process.env.REMOTE_BASE_URL || 'base@http://localhost:3000/remoteEntry.js',
       },
       exposes: {
+        './App': './src/App',  // 暴露整个应用（包含内部路由）
         './UserList': './src/components/UserList',
         './UserProfile': './src/components/UserProfile',
       },
